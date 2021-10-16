@@ -1,0 +1,57 @@
+.menu-top [type="checkbox"] {
+  display: none;
+}
+.menu-top label.toggleMenu {
+  display: none;
+  cursor: pointer;
+  padding: 4px 10px;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-sizing: border-box;
+  border-radius: 4px;
+}
+.menu-top label.toggleMenu div {
+  width: 26px;
+  height: 2px;
+  background: rgba(255, 255, 255, 0.5);
+  margin: 6px 0;
+}
+@media all and (max-width: 576px) {
+  * {
+    padding: 0px;
+    margin: 0px;
+  }
+  .menu-top {
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .menu-top ul {
+    display: block;
+  }
+  .menu-top ul {
+    display: none;
+  }
+  .menu-top label.toggleMenu {
+    display: block;
+    order: 1;
+  }
+  input.toggleMenu:checked ~ ul {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* jombotron */
+
+  /* card-container */
+
+  .container .profile-card {
+    margin-bottom: 30px;
+  }
+  /* table-container */
+
+  .container {
+    overflow-x: scroll;
+  }
+}
